@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>EspagueteFood</title>
+        <link rel="stylesheet" type="text/css" href="css/estiloSistema.css"/>
+    </head>
+    <body>
+
+        <header>
+            <div id="divLogotipoSistema">
+                <a href="">
+                    <span id="spanAuxiliarDeAlinhamentoVertical"></span>
+                <img src="imagens/espaguetedavovoicone.jpg" id="imgLogotipoSistema">
+                </a>
+            </div>
+            <div id="usuarioLogado">
+                Olá Nome do Usuário
+                <br/>
+                <img src="imagens/carrinho.jpg" id="imgIconeCarrinho">
+            </div>
+        </header>
+        <br/><br/>
+        <!-- Cabeçalho - Fim -->
+
+        <div>
+            <h1>É Hora de rangar!</h1>
+            <form method="POST" action="">
+                <fieldset>
+                    <input type="text" name="busca" placeholder="Buscar por..."/>
+                    <input type="button" value="Procurar" onClick="location.href='clienteRestaurante.html';"/><br/>
+                </fieldset>
+            </form>
+        </div>
+
+        <div id="divCategoriasComidaGeral">
+            <div id="divCategoriasComidaOpcao">
+                <a href="#">
+                    <img src="imagens/espaguete.jpg" id="imgEspaguete"/><br/>
+                    <span>Espaguetes</span>
+                </a>
+            </div>
+
+            <div id="divCategoriasComidaOpcao">
+                <a href="#">
+                    <img src="imagens/tropeiro.jpg" id="imgTropeiro"/><br/>
+                    <span>Tropeiro</span>
+                </a>
+            </div>
+
+            <div id="divCategoriasComidaOpcao">
+                <a href="#">
+                    <img src="imagens/estrogonof.jpg" id="imgEstrogonof"/><br/>
+                    <span>Estrogonof</span>
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <h1>Cupons disponíveis</h1>
+            <input type="button" value="10% Tropeiro"/><br/>
+            <input type="button" value="15% Espaguetes"/><br/>
+        </div>
+
+        <div>
+            <h1>Ultimos pedidos</h1>
+            <input type="button" value="#1010 Tropeiro" onClick="location.href='clientePedido.html';"/><br/>
+            <input type="button" value="#1111 Espaguete" onClick="location.href='clientePedido.html';"/><br/>
+            <input type="button" value="#1212 Estrogonof" onClick="location.href='clientePedido.html';"/><br/>
+        </div>
+
+        <div>
+            <h1>Conta</h1>
+            <input type="button" value="Meus dados"/><br/>
+            <input type="button" value="Sair" onClick="location.href='index.html';"/><br/>
+        </div>
+
+         <!-- Rodapé - Início -->
+    </body>
+</html>

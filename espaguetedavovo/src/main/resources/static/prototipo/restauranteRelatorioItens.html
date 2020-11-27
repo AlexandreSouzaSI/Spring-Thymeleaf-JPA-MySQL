@@ -1,0 +1,74 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>EspagueteFood</title>
+        <link rel="stylesheet" type="text/css" href="css/estiloSistema.css"/>
+    </head>
+    <body>
+
+        <header>
+            <div id="divLogotipoSistema">
+                <a href="">
+                    <span id="spanAuxiliarDeAlinhamentoVertical"></span>
+                <img src="imagens/espaguetedavovoicone.jpg" id="imgLogotipoSistema">
+                </a>
+            </div>
+            <div id="usuarioLogado">
+                Olá Nome do Usuário
+            </div>
+        </header>
+        <br/><br/>
+        <!-- Cabeçalho - Fim -->
+
+
+            <div>
+                <h1>Relatório de Itens</h1>
+                    <fieldset>
+                        <legend>Filtros</legend>
+                        <label for="item">Item: </label><br/>
+                        <input type="text" name="item" id="item"/><br/><br/>
+
+                        <label for="inicio">Início: </label><br/>
+                        <input type="date" name="inicio" id="inicio"/><br/><br/>
+
+                        <label for="fim">Fim: </label><br/>
+                        <input type="date" name="fim" id="fim"/><br/><br/>
+
+                        <input type="button" value="Buscar"/>
+                    </fieldset>
+            </div><br/><br/>
+            
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Quantidade</th>
+                    <th>Faturamento</th>
+                </tr>
+                <tr>
+                    <td>Tropeiro</td>
+                    <td>10</td>
+                    <td>R$ 222,00</td>
+                </tr>
+                <tr>
+                    <td>Espaguete a bolonhesa</td>
+                    <td>10</td>
+                    <td>R$ 200,00</td>
+                </tr>
+                <tr>
+                    <td>Strogonof</td>
+                    <td>10</td>
+                    <td>R$ 200,00</td>
+                </tr>
+                <tr>
+                    <td>Refrigerante</td>
+                    <td>10</td>
+                    <td>R$ 20,00</td>
+                </tr>
+            </table><br/><br/>
+
+
+        <input type="button" value="Voltar" onClick="location.href='restauranteHome.html';"/><br/>
+
+        <!-- Rodapé - Início -->
+        </body>
+</html>

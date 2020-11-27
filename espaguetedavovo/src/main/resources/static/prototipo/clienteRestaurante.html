@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>EspagueteFood</title>
+        <link rel="stylesheet" type="text/css" href="css/estiloSistema.css"/>
+    </head>
+    <body>
+
+        <header>
+            <div id="divLogotipoSistema">
+                <a href="">
+                    <span id="spanAuxiliarDeAlinhamentoVertical"></span>
+                <img src="imagens/espaguetedavovoicone.jpg" id="imgLogotipoSistema">
+                </a>
+            </div>
+            <div id="usuarioLogado">
+                Olá Nome do Usuário
+                <br/>
+                <img src="imagens/carrinho.jpg" id="imgIconeCarrinho">
+            </div>
+        </header>
+        <br/><br/>
+        <!-- Cabeçalho - Fim -->
+
+        <div>
+                <img src="imagens/espaguetedavovoicone.jpg"/><br/><br/>
+                <span id="restauranteOpcaoTitulo">Nome do Restaurante</span><br/>
+                <span>Categoria de Comida</span><br/>
+                <span>Tempo média de entrega: 40m</span><br/>
+                <span>Taxa de entrega: R$3,00</span><br/>
+        </div>
+
+        <div>
+            <h1>Opções</h1>
+            <fieldset>
+                <legend>Filtros</legend>
+                <input type="button" value="Promoções"/>
+                <input type="button" value="Bebidas"/>
+                <input type="button" value="Massas"/>
+                <input type="button" value="Tropeiros"/>
+                <input type="button" value="Almoço"/>
+            </fieldset><br/>
+        </div>
+
+        <div>
+            <h1>Destaques</h1>
+        </div>
+
+        <div>
+
+            <div>
+                <img src="imagens/espagueteabolonhesa.jpg" id="imgDestaques"/><br/><br/>
+                <span>Espaguete a Bolonhesa</span><br/>
+                <span>Macarrão, Molho Bolonhesa, Mussarela e Cebolinha</span><br/>
+                <span>R$ 20,00</span><br/>
+                <form method="POST" action="">
+                    <label for="quantidade">Quantidade: </label>
+                    <select name="quantidade" id="quantidade">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select><br/><br/>
+                    Observações:<br/>
+                    <textarea>
+
+                    </textarea><br/><br/>
+                    <input type="button" value="Adicionar ao carrinho"/>
+                </form>
+            </div>
+
+            <div>
+                <img src="imagens/espagueteaobacon.jpg" id="imgDestaques"/><br/><br/>
+                <span>Espaguete a Bolonhesa</span><br/>
+                <span>Macarrão, Bacon, Cebola, Pimentão Vermelho, Pimentão Amarelo, Mussarela e Cebolinha</span><br/>
+                <span>R$ 20,00</span><br/>
+                <form method="POST" action="">
+                    <label for="quantidade">Quantidade: </label>
+                    <select name="quantidade" id="quantidade">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select><br/><br/>
+                    Observações:<br/>
+                    <textarea>
+
+                    </textarea><br/><br/>
+                    <input type="button" value="Adicionar ao carrinho"/>
+                </form>
+            </div>
+
+        </div>
+
+        <input type="button" value="Voltar" onClick="location.href='clienteHome.html';"/><br/>
+
+        <!-- Rodapé - Início -->
+    </body>
+</html>

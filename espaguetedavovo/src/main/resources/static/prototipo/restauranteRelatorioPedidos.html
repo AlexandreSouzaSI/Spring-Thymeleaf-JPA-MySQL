@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>EspagueteFood</title>
+        <link rel="stylesheet" type="text/css" href="css/estiloSistema.css"/>
+    </head>
+    <body>
+
+        <header>
+            <div id="divLogotipoSistema">
+                <a href="">
+                    <span id="spanAuxiliarDeAlinhamentoVertical"></span>
+                <img src="imagens/espaguetedavovoicone.jpg" id="imgLogotipoSistema">
+                </a>
+            </div>
+            <div id="usuarioLogado">
+                Olá Nome do Usuário
+            </div>
+        </header>
+        <br/><br/>
+        <!-- Cabeçalho - Fim -->
+
+
+            <div>
+                <h1>Relatório de Pedidos</h1>
+                    <fieldset>
+                        <legend>Filtros</legend>
+                        <label for="numero">Número: </label><br/>
+                        <input type="text" name="numero" id="numero"/><br/><br/>
+
+                        <label for="inicio">Início: </label><br/>
+                        <input type="date" name="inicio" id="inicio"/><br/><br/>
+
+                        <label for="fim">Fim: </label><br/>
+                        <input type="date" name="fim" id="fim"/><br/><br/>
+
+                        <input type="button" value="Buscar"/>
+                    </fieldset>
+            </div><br/><br/>
+            
+            <table>
+                <tr>
+                    <th>Pedido</th>
+                    <th>Nome</th>
+                    <th>Endereçõ</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td><input type="button" value="#1010"></td>
+                    <td>Alexandre</td>
+                    <td>Rua Travessa Doze Nª 22</td>
+                    <td>R$ 50,00</td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="#1111"></td>
+                    <td>Nathália</td>
+                    <td>Rua Travessa Doze Nª 22</td>
+                    <td>R$ 150,00</td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="#1212"></td>
+                    <td>Mario</td>
+                    <td>Rua Norberto Mayer 234</td>
+                    <td>R$ 500,00</td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="#1010"></td>
+                    <td>Moises</td>
+                    <td>Rua Rio Pangua 10</td>
+                    <td>R$ 5,00</td>
+                </tr>
+            </table><br/><br/>
+
+
+        <input type="button" value="Voltar" onClick="location.href='restauranteHome.html';"/><br/>
+
+        <!-- Rodapé - Início -->
+        </body>
+</html>

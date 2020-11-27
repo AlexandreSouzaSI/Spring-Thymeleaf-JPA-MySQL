@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>EspagueteFood</title>
+        <link rel="stylesheet" type="text/css" href="css/estiloSistema.css"/>
+    </head>
+    <body>
+
+        <header>
+            <div id="divLogotipoSistema">
+                <a href="">
+                    <span id="spanAuxiliarDeAlinhamentoVertical"></span>
+                <img src="imagens/espaguetedavovoicone.jpg" id="imgLogotipoSistema">
+                </a>
+            </div>
+            <div id="usuarioLogado">
+                Olá Nome do Usuário
+            </div>
+        </header>
+        <br/><br/>
+        <!-- Cabeçalho - Fim -->
+
+            <div>
+                <h1>Comidas</h1>
+            </div>
+
+            <div>
+                <span>Tropeiro</span><br/>
+                <span>Tropeiro</span><br/>
+                <span>Feijão tropeiro, Arroz, Couve, Torresmo e Bife de porco</span><br/>
+                <span>R$ 22,00</span><br/><br/>
+                <input type="button" value="Remover"/><br/><br/>
+
+                <span>Espaguete a bolonhesa</span><br/>
+                <span>Massa</span><br/>
+                <span>Macarrão, molho a bolonhesa, mussarela e cebolinha</span><br/>
+                <span>R$ 20,00</span><br/><br/>
+                <input type="button" value="Remover"/><br/><br/>
+
+            <div id="mensagemDeErro">
+                Eventual mensagem de erro
+            </div><br/>
+
+            <span>Nova Comida</span><br/>
+            <form method="POST" action="">
+                <label for="item">Item: </label><br/>
+                <input type="text" name="item" id="item"/><br/>
+
+                <label for="descricao">Descrição: </label><br/>
+                <input type="text" name="descricao" id="descricao"/><br/>
+
+                <label for="preco">Preço: </label><br/>
+                <input type="text" name="preco" id="preco"/><br/>
+
+                <label for="categoria">Categoria de comida: </label><br/>
+                <input type="text" name="categoria" id="categoria"/><br/>
+
+                <label for="destaque">Destaques: </label><br/>
+                <input type="checkbox" name="destaque" id="destaque"/><br/><br/>
+
+                <input type="button" value="Adicionar"/><br/><br/>
+            </form>
+            </div>
+
+            <input type="button" value="Voltar" onClick="location.href='restauranteHome.html';"/><br/>
+
+        <!-- Rodapé - Início -->
+    </body>
+</html>

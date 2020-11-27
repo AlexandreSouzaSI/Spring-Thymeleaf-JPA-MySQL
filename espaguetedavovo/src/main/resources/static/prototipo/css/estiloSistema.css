@@ -1,0 +1,246 @@
+*
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input
+{
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid rgb(107, 105, 105);
+    height: 30px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+input[type=text], input[type=password], select
+{
+    font-size: 16px;
+    width: 350px;
+    padding: 8px;
+    
+}
+
+input[type=submit], input[type=button]
+{
+    background-color: rgb(250, 135, 135);
+    border-bottom: 3px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+    border-right: 3px solid;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    padding: 5px 8px;
+}
+
+input[type=submit]:hover, input[type=button]:hover
+{
+    background-color: antiquewhite;
+}
+
+select
+{
+    width: 50px;
+}
+
+select#categoria
+{
+    width: 150px;
+    border-radius: 20px;
+}
+
+select#selectConheceuSite
+{
+    width: 200px;
+    border-radius: 20px;
+}
+
+body
+{
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    background-color:  rgba(219, 210, 210, 0.973);
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover
+{
+    text-decoration: underline;
+}
+
+div#divLogotipoSistema
+{
+    background-color: rgba(219, 210, 210, 0.973);
+    height: 20%;
+}
+
+span#spanAuxiliarDeAlinhamentoVertical
+{
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img
+{
+    height: 200px;
+    border-radius: 10px;
+    border-left: solid;
+    border-right: solid;
+    border-top: solid;
+    border-bottom: solid;
+}
+
+img#imgCarrinhoC, img#imgEspaguete, img#imgTropeiro, img#imgEstrogonof, img#imgErro
+{
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+img#imgLogotipoSistema
+{
+    height: 80%;
+    vertical-align: middle;
+}
+
+img#imgIconeUsuario
+{
+    height: 80px;
+}
+
+img#imgDestaques
+{
+    width: 300px;
+    height: 300px;
+}
+
+h1
+{
+    color: rgb(14, 73, 150);
+    background-color: #eeeeee;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 20px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 10px solid rgba(219, 210, 210, 0.973);
+    border-right: 10px solid rgba(219, 210, 210, 0.973);
+    border-top: 2px solid rgba(219, 210, 210, 0.973);
+    border-bottom: 2px solid rgba(219, 210, 210, 0.973);
+    border-radius: 30px;
+
+}
+
+div#mensagemDeErro
+{
+    background-color: #d40000;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+div#mensagemSucesso
+{
+    background-color: darkseagreen;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+div#usuarioLogado
+{
+    background-color: rgb(231, 219, 219);
+    margin-top: 2px;
+    line-height: 40px;
+
+}
+
+img#imgIconeCarrinho
+{
+    height: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+fieldset, textarea
+{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border-width: 2px;
+}
+
+textarea
+{
+    width: 300px;
+    height: 100px;
+}
+
+table
+{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    border-spacing: 3px;
+    height: 100px;
+    width: 800px;    
+}
+
+td
+{
+    padding-right: 10px;
+    padding-left: 50px;
+    border-radius: 5px;
+}
+
+tr:nth-child(even)
+{
+    background-color: bisque;
+}
+
+tr:nth-child(odd)
+{
+    background-color: burlywood;
+}
+
+th
+{
+    background-color: rgb(158, 128, 151);
+    text-transform: uppercase;
+    padding-right: 10px;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+
+div#divCategoriasComidaOpcao
+{
+    float: left;
+    height: 50px;
+    width: 1000px;
+}
+
+div#divCategoriasComidaGeral
+{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    height: 160px;
+    margin-top: 30px;
+}
+
+span#restauranteOpcaoTitulo
+{
+    font-weight: bold;
+    text-transform: uppercase;
+}
