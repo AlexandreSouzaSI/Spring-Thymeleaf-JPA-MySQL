@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import br.com.espaguetedavovo.application.ClienteService;
-import br.com.espaguetedavovo.application.RestauranteService;
-import br.com.espaguetedavovo.application.ValidationException;
+import br.com.espaguetedavovo.application.service.ClienteService;
+import br.com.espaguetedavovo.application.service.RestauranteService;
+import br.com.espaguetedavovo.application.service.ValidationException;
 import br.com.espaguetedavovo.domain.cliente.Cliente;
 import br.com.espaguetedavovo.domain.restaurante.CategoriaRestaurante;
 import br.com.espaguetedavovo.domain.restaurante.CategoriaRestauranteRepository;
