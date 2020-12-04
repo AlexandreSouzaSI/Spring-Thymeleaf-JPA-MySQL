@@ -1,4 +1,4 @@
-package br.com.espaguetedavovo.application.test;
+	package br.com.espaguetedavovo.application.test;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -9,8 +9,6 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
-import antlr.StringUtils;
-import br.com.espaguetedavovo.application.service.RestauranteService;
 import br.com.espaguetedavovo.domain.cliente.Cliente;
 import br.com.espaguetedavovo.domain.cliente.ClienteRepository;
 import br.com.espaguetedavovo.domain.restaurante.CategoriaRestaurante;
@@ -37,13 +35,13 @@ public class InsertDataForTesting {
 	
 	@EventListener
 	public void onApplicationEvent(ContextRefreshedEvent event) {
-		clientes();
+		Cliente[] clientes = clientes();
 		Restaurante[] restaurantes = restaurantes();
 		itensCardapio(restaurantes);
 	}
 	
 	private Restaurante[] restaurantes() {
-		List<Restaurante> restaurantes = new ArrayList<Restaurante>();
+		List<Restaurante> restaurantes = new ArrayList<>();
 		
 		CategoriaRestaurante categoriaTropeiro = categoriaRestauranteRepository.findById(1).orElseThrow();
 		CategoriaRestaurante categoriaMassa = categoriaRestauranteRepository.findById(2).orElseThrow();
@@ -91,6 +89,7 @@ public class InsertDataForTesting {
 		c.setCep("32010745");
 		c.setCpf("08051357663");
 		c.setTelefone("975805400");
+		clientes.add(c);
 		clienteRepository.save(c);
 		
 		c = new Cliente();
@@ -100,6 +99,7 @@ public class InsertDataForTesting {
 		c.setCep("32010745");
 		c.setCpf("11317160606");
 		c.setTelefone("975805400");
+		clientes.add(c);
 		clienteRepository.save(c);
 		
 		Cliente[] array = new Cliente[clientes.size()];
@@ -114,7 +114,7 @@ public class InsertDataForTesting {
 		ic.setPreco(BigDecimal.valueOf(22.2));
 		ic.setRestaurante(restaurantes[0]);
 		ic.setDestaque(true);
-		ic.setImagem("0001-comida.png");
+		ic.setImagem("0003-categoriatropeiro.jpg");
 		itemCardapioRepository.save(ic);
 		
 		ic = new ItemCardapio();
@@ -124,7 +124,7 @@ public class InsertDataForTesting {
 		ic.setPreco(BigDecimal.valueOf(22.2));
 		ic.setRestaurante(restaurantes[0]);
 		ic.setDestaque(true);
-		ic.setImagem("0002-comida.png");
+		ic.setImagem("0002-categoriamassa.jpg");
 		itemCardapioRepository.save(ic);
 		
 	}

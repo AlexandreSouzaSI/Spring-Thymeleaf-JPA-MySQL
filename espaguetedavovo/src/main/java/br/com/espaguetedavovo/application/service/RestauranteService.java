@@ -9,7 +9,7 @@ import br.com.espaguetedavovo.domain.cliente.ClienteRepository;
 import br.com.espaguetedavovo.domain.restaurante.Restaurante;
 import br.com.espaguetedavovo.domain.restaurante.RestauranteRepository;
 
-@SuppressWarnings("unused")
+
 @Service
 public class RestauranteService {
 
@@ -32,6 +32,8 @@ public class RestauranteService {
 		if (restaurante.getId() != null) {
 			Restaurante restauranteDB = restauranteRepository.findById(restaurante.getId()).orElseThrow();
 			restaurante.setSenha(restauranteDB.getSenha());
+			restaurante.setLogotipo(restauranteDB.getLogotipo());
+			restauranteRepository.save(restaurante);
 		} else {
 			restaurante.encryptPassword();
 			restaurante = restauranteRepository.save(restaurante);

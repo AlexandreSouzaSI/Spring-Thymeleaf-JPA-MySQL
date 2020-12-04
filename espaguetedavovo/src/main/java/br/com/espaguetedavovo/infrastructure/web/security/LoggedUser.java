@@ -57,14 +57,16 @@ public class LoggedUser implements UserDetails {
 		
 		if(usuario instanceof Cliente) {
 			role = Role.CLIENTE;
+			
 		} else if (usuario instanceof Restaurante) {
 			role = Role.RESTAURANTE;
+			
 		} else {
 			throw new IllegalStateException("O Tipo de usuário não é valido");
 		}
 		
 		this.role = role;
-		this.roles = List.of(new SimpleGrantedAuthority("Role_" + role));
+		this.roles = List.of(new SimpleGrantedAuthority("ROLE_" + role));
 	}
 	
 

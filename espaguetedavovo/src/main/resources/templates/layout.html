@@ -13,10 +13,15 @@
         <header>
             <div id="divLogotipoSistema">
                     <span id="spanAuxiliarDeAlinhamentoVertical"></span>
-                    <a 	th:href="@{/}">
+                    <a 	th:href="${link} == null ? @{/} : ${link}">
                 		<img th:src="@{/imagens/espaguetedavovoicone.jpg}" id="imgLogotipoSistema"/>
                		</a>
             </div>
+            <div id="usuarioLogado" th:if="${#authentication.principal != 'anonymousUser'}">
+               <span th:text="'Olá , ' + ${#authentication.principal.usuario.nome + '!'}"></span>
+                <br/>
+            </div>
+            
         </header>
         <br/><br/>
         <!-- Cabeçalho - Fim -->

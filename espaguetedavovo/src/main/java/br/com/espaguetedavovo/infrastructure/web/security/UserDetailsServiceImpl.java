@@ -19,6 +19,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 	@Autowired
 	private RestauranteRepository restauranteRepository;
 	
+	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 		
 		Usuario usuario = clienteRepository.findByEmail(username);

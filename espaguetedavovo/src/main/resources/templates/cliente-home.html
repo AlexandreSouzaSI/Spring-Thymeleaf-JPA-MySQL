@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html	
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org" layout:decorate="~{layout}" th:with="link=@{/cliente/home}">
+	
+    <body>
+		<div layout:fragment="content">
+
+	        <div>
+	            <h1>É Hora de rangar!</h1>
+	            <form method="POST" action="">
+	                <fieldset>
+	                    <input type="text" name="busca" placeholder="Buscar por..."/>
+	                    <input type="button" value="Procurar" onClick="location.href='clienteRestaurante.html';"/><br/>
+	                </fieldset>
+	            </form>
+	        </div>
+	
+	        <div id="divCategoriasComidaGeral">
+	            <div id="divCategoriasComidaOpcao" th:each="categoria : ${categorias}">
+	                <a href="#" th:onclick="'searchRest(' + ${categoria.id} + ');'">
+	                    <img th:src="@{/images/categoria/} + ${categoria.imagem}" id="imgCategoria"/><br/>
+	                    <span th:text="${categoria.nome}"></span>
+	                </a>
+	            </div>
+	        </div>
+	
+	        <div>
+	            <h1>Cupons disponíveis</h1>
+	            <input type="button" value="10% Tropeiro"/><br/>
+	            <input type="button" value="15% Espaguetes"/><br/>
+	        </div>
+	
+	        <div>
+	            <h1>Ultimos pedidos</h1>
+	            <input type="button" value="#1010 Tropeiro" onClick="location.href='clientePedido.html';"/><br/>
+	            <input type="button" value="#1111 Espaguete" onClick="location.href='clientePedido.html';"/><br/>
+	            <input type="button" value="#1212 Estrogonof" onClick="location.href='clientePedido.html';"/><br/>
+	        </div>
+	
+	        <div>
+	            <h1>Conta</h1>
+	            <input type="button" value="Meus dados" th:onclick="'location.href=\'' + @{/cliente/edit} + '\';'"/><br/><br/>
+	            <input type="button" value="Sair" th:onclick="'location.href=\'' + @{/logout} + '\';'"/><br/>
+	        </div>
+		</div>
+    </body>
+</html>
